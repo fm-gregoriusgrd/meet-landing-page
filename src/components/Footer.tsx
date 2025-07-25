@@ -12,20 +12,13 @@ export default function FooterSection() {
       </div>
 
       {/* Mobile Background */}
-      <FooterBackground
-        className="bg-[url('/footer/image-footer-mobile.png')] block md:hidden"
-      />
+      <FooterBackground className="block bg-[url('/footer/image-footer-mobile.png')] md:hidden" />
 
       {/* Tablet Background */}
-      <FooterBackground
-        className="bg-[url('/footer/image-footer-tablet.png')] hidden md:flex lg:hidden"
-      />
+      <FooterBackground className="hidden bg-[url('/footer/image-footer-tablet.png')] md:flex lg:hidden" />
 
       {/* Desktop Background */}
-      <FooterBackground
-        className="bg-[url('/footer/image-footer-desktop.png')] hidden lg:flex"  
-      />
-      
+      <FooterBackground className="hidden bg-[url('/footer/image-footer-desktop.png')] lg:flex" />
     </section>
   );
 }

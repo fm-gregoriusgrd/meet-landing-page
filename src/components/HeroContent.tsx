@@ -7,10 +7,10 @@ export default function HeroContent({ className = "" }: HeroContentProps) {
     <div
       className={`flex flex-col items-center gap-6 px-8 text-center ${className}`}
     >
-      <h1 className="text-[40px] font-black text-[var(--custom-slate-900)] md:text-5xl">
+      <h1 className="text-[40px] font-black text-[var(--custom-slate-900)] md:text-5xl lg:text-6xl">
         Group Chat for Everyone
       </h1>
-      <p className="leading-6 text-[var(--custom-slate-600)]">
+      <p className="leading-6 text-[var(--custom-slate-600)] lg:text-lg">
         Meet makes it easy to connect with others face-to-face virtually and
         collaborate across any device.
       </p>

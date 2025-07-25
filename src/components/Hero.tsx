@@ -4,7 +4,6 @@ import HeroContent from "./HeroContent";
 export default function HeroSection() {
   return (
     <section className="flex flex-col items-center justify-center">
-      
       {/* Logo */}
       <div className="relative mt-12 h-[40px] w-[120px]">
         <Image
@@ -18,10 +17,9 @@ export default function HeroSection() {
       {/* Hero */}
       <div className="relative mt-16 w-full overflow-hidden">
         {/* Desktop Background */}
-        <div className="relative hidden lg:block h-[303px]">
-
+        <div className="relative hidden h-[303px] lg:block">
           {/* Left */}
-          <div className="absolute left-0 top-0 h-[303px] w-[394px]">
+          <div className="absolute top-0 left-0 h-[303px] w-[394px]">
             <Image
               src="/hero/image-hero-left-desktop.png"
               alt="Hero Left"
@@ -31,7 +29,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right */}
-          <div className="absolute right-0 top-0 h-[303px] w-[394px]">
+          <div className="absolute top-0 right-0 h-[303px] w-[394px]">
             <Image
               src="/hero/image-hero-right-desktop.png"
               alt="Hero Right"
@@ -41,13 +39,13 @@ export default function HeroSection() {
           </div>
 
           {/* Content Centered */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[450px]">
+          <div className="absolute top-1/2 left-1/2 w-full max-w-[450px] -translate-x-1/2 -translate-y-1/2">
             <HeroContent />
           </div>
         </div>
 
         {/* mobile & tablet */}
-        <div className="lg:hidden flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center lg:hidden">
           <div className="relative h-[160px] w-[430px] md:h-[303px] md:w-[820px]">
             <Image
               src="/hero/image-hero-tablet.png"

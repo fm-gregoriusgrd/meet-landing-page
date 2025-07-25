@@ -5,7 +5,7 @@ interface ImageProps {
 export default function FooterBackground({ className }: ImageProps) {
   return (
     <div className={`${className} bg-cover bg-center px-8 py-16`}>
-      <div className="mx-auto flex max-w-[500px] flex-col items-center justify-center gap-6 text-center text-white lg:max-w-[1120px] lg:flex-row lg:text-start">
+      <div className="mx-auto flex max-w-[500px] flex-col items-center gap-6 text-center text-white lg:max-w-[1120px] lg:flex-row lg:text-start">
         <h2 className="text-3xl font-black md:text-4xl lg:max-w-[400px]">
           Experience more together
         </h2>
