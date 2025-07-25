@@ -22,7 +22,8 @@ const images = [
 export default function ContentSection() {
   return (
     <section className="border-4 border-blue-600">
-      <div className="flex flex-col items-center justify-center gap-16 px-8 py-8 mb-8">
+      <div className="flex flex-col items-center justify-center gap-16 px-8 py-8 mb-8
+      md:px-16 md:py-16">
         <div className="flex flex-col items-center">
           {/* Vertical Line */}
           <div className="h-20 w-px bg-[var(--custom-slate-300)]"></div>
@@ -36,7 +37,7 @@ export default function ContentSection() {
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {images.map((image, index) => (
             <Image
             key={index}
@@ -50,17 +51,17 @@ export default function ContentSection() {
           ))}
         </div>
 
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center md:max-w-[500px] mx-auto">
           <div>
-            <p className="text-xs font-bold tracking-[4px] text-[var(--custom-cyan-600)] uppercase">
+            <p className="text-xs md:text-sm font-bold tracking-[4px] text-[var(--custom-cyan-600)] uppercase">
               Built for modern use
             </p>
-            <h2 className="text-3xl font-black text-[var(--custom-slate-900)]">
+            <h2 className="text-3xl md:text-4xl font-black text-[var(--custom-slate-900)]">
               Smarter meetings, all in one place
             </h2>
           </div>
 
-          <p className="mt-8 leading-6 font-medium text-[var(--custom-slate-600)]">
+          <p className="mt-8 leading-6 text-[var(--custom-slate-600)]">
             Send messages, share files, show your screen, and record your
             meetings — all in one workspace. Control who can join with
             invite-only team access, data encryption, and data export.
